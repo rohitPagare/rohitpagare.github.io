@@ -7,6 +7,7 @@ const apps = [
         tags: ["Android", "Java", "Music"],
         icon: "fa-chart-line",
         logo: "assets/duo_music_logo.png",
+        downloads: "900K+",
         gradient: "linear-gradient(135deg, #00f2fe 0%, #4facfe 100%)",
         link: "https://play.google.com/store/apps/details?id=com.orhotechnologies.orhoduomusic"
     },
@@ -15,6 +16,7 @@ const apps = [
         description: "A split-screen Android video player enabling simultaneous playback of two different videos.",
         tags: ["Android", "Java", "Video"],
         logo: "assets/duo_video_logo.png",
+        downloads: "20K+",
         gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
         link: "https://play.google.com/store/apps/details?id=com.orhotechnologies.orhoduovideoplayer"
     },
@@ -24,6 +26,7 @@ const apps = [
         tags: ["Android", "Java", "Social"],
         icon: "fa-users",
         logo: "assets/siddhivinayak_logo.webp",
+        downloads: "10K+",
         gradient: "linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)",
         link: "https://play.google.com/store/apps/details?id=com.rohit.sidhhivinayak"
     },
@@ -33,6 +36,7 @@ const apps = [
         tags: ["Android", "Java", "Productivity"],
         icon: "fa-check-double",
         logo: "assets/status_saver_logo.png",
+        downloads: "5K+",
         gradient: "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
         link: "https://play.google.com/store/apps/details?id=com.orho.orhostatussaver"
     },
@@ -102,7 +106,13 @@ function renderApps() {
             ? `<div class="card-icon" style="background: none; box-shadow: none;"><img src="${app.logo}" alt="${app.title} Logo" style="width: 100%; height: 100%; object-fit: contain;"></div>`
             : `<div class="card-icon" style="background: ${app.gradient}"><i class="fa-solid ${app.icon}"></i></div>`;
 
+        const badgeHtml = app.downloads
+            ? `<div class="download-badge"><i class="fa-solid fa-download"></i> ${app.downloads}</div>`
+            : '';
+
+
         card.innerHTML = `
+            ${badgeHtml}
             ${iconHtml}
             <div class="card-content">
                 <h3>${app.title}</h3>
