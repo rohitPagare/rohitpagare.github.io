@@ -3,27 +3,29 @@
 const apps = [
     {
         title: "Duo Music Player",
-        description: "A comprehensive personal finance management tool using React.",
+        description: "A dual Android audio player enabling simultaneous playback of two songs via separate earbuds.",
         tags: ["Android", "Java", "Music"],
         icon: "fa-chart-line",
+        logo: "assets/duo_music_logo.png",
         gradient: "linear-gradient(135deg, #00f2fe 0%, #4facfe 100%)",
         link: "https://play.google.com/store/apps/details?id=com.orhotechnologies.orhoduomusic"
     },
     {
-        title: "Health Mate",
-        description: "Fitness tracking application with workout plans and diet logs.",
-        tags: ["Flutter", "Firebase", "Health"],
-        icon: "fa-heart-pulse",
+        title: "Duo Video Player",
+        description: "A split-screen Android video player enabling simultaneous playback of two different videos.",
+        tags: ["Android", "Java", "Video"],
+        logo: "assets/duo_video_logo.png",
         gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-        link: "#"
+        link: "https://play.google.com/store/apps/details?id=com.orhotechnologies.orhoduovideoplayer"
     },
     {
-        title: "Social Connect",
-        description: "Real-time messaging and social networking platform.",
-        tags: ["Vue.js", "Socket.io", "Social"],
+        title: "सिद्धिविनायक",
+        description: "A religious Android app offering live temple darshans, prayers, and spiritual information.",
+        tags: ["Android", "Java", "Video"],
         icon: "fa-users",
+        logo: "assets/siddhivinayak_logo.webp",
         gradient: "linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)",
-        link: "#"
+        link: "https://play.google.com/store/apps/details?id=com.rohit.sidhhivinayak"
     },
     {
         title: "Task Master",
@@ -83,18 +85,6 @@ const apps = [
     }
 ];
 
-// Add more placeholder data to reach ~20 items as requested
-for (let i = 11; i <= 20; i++) {
-    apps.push({
-        title: `App Project ${i}`,
-        description: "Another innovative solution solving real-world problems.",
-        tags: ["Tech", "Innovation"],
-        icon: "fa-layer-group",
-        gradient: "linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)",
-        link: "#"
-    });
-}
-
 // Render Apps
 const appGrid = document.querySelector('.app-grid');
 
@@ -107,10 +97,12 @@ function renderApps() {
         card.className = 'app-card flow-up';
         card.style.animationDelay = `${0.1 + (index * 0.05)}s`; // Staggered animation
 
+        const iconHtml = app.logo
+            ? `<div class="card-icon" style="background: none; box-shadow: none;"><img src="${app.logo}" alt="${app.title} Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%;"></div>`
+            : `<div class="card-icon" style="background: ${app.gradient}"><i class="fa-solid ${app.icon}"></i></div>`;
+
         card.innerHTML = `
-            <div class="card-icon" style="background: ${app.gradient}">
-                <i class="fa-solid ${app.icon}"></i>
-            </div>
+            ${iconHtml}
             <div class="card-content">
                 <h3>${app.title}</h3>
                 <p>${app.description}</p>
@@ -121,9 +113,9 @@ function renderApps() {
         `;
 
         card.addEventListener('click', () => {
-            // Example action
-            console.log(`Clicked on ${app.title}`);
-            // window.location.href = app.link; 
+            if (app.link && app.link !== '#') {
+                window.open(app.link, '_blank');
+            }
         });
 
         appGrid.appendChild(card);
