@@ -21,19 +21,20 @@ const apps = [
     {
         title: "सिद्धिविनायक",
         description: "A religious Android app offering live temple darshans, prayers, and spiritual information.",
-        tags: ["Android", "Java", "Video"],
+        tags: ["Android", "Java", "Social"],
         icon: "fa-users",
         logo: "assets/siddhivinayak_logo.webp",
         gradient: "linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)",
         link: "https://play.google.com/store/apps/details?id=com.rohit.sidhhivinayak"
     },
     {
-        title: "Task Master",
-        description: "Productivity app to organize daily tasks and projects effectively.",
-        tags: ["React Native", "Redux", "Productivity"],
+        title: "Status Saver",
+        description: "An all-in-one Android status downloader for saving social media images, videos, and GIFs",
+        tags: ["Android", "Java", "Productivity"],
         icon: "fa-check-double",
+        logo: "assets/status_saver_logo.png",
         gradient: "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
-        link: "#"
+        link: "https://play.google.com/store/apps/details?id=com.orho.orhostatussaver"
     },
     {
         title: "E-Shop Pro",
@@ -98,7 +99,7 @@ function renderApps() {
         card.style.animationDelay = `${0.1 + (index * 0.05)}s`; // Staggered animation
 
         const iconHtml = app.logo
-            ? `<div class="card-icon" style="background: none; box-shadow: none;"><img src="${app.logo}" alt="${app.title} Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%;"></div>`
+            ? `<div class="card-icon" style="background: none; box-shadow: none;"><img src="${app.logo}" alt="${app.title} Logo" style="width: 100%; height: 100%; object-fit: contain;"></div>`
             : `<div class="card-icon" style="background: ${app.gradient}"><i class="fa-solid ${app.icon}"></i></div>`;
 
         card.innerHTML = `
