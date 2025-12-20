@@ -1,1 +1,5 @@
+# Google AdMob (Duo Music Player)
 google.com, pub-6050656097490159, DIRECT, f08c47fec0942fa0
+
+# Facebook Audience Network (Duo Video Plyer)
+facebook.com, 1013095355754082, RESELLER, c3e20eee3f780d68
