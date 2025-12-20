@@ -2,12 +2,12 @@
 // You can edit this array to add your real project details.
 const apps = [
     {
-        title: "Finance Tracker",
+        title: "Duo Music Player",
         description: "A comprehensive personal finance management tool using React.",
-        tags: ["React", "Node.js", "Finance"],
+        tags: ["Android", "Java", "Music"],
         icon: "fa-chart-line",
         gradient: "linear-gradient(135deg, #00f2fe 0%, #4facfe 100%)",
-        link: "#"
+        link: "https://play.google.com/store/apps/details?id=com.orhotechnologies.orhoduomusic"
     },
     {
         title: "Health Mate",
@@ -101,12 +101,12 @@ const appGrid = document.querySelector('.app-grid');
 function renderApps() {
     // Clear existing (if any)
     appGrid.innerHTML = '';
-    
+
     apps.forEach((app, index) => {
         const card = document.createElement('div');
         card.className = 'app-card flow-up';
         card.style.animationDelay = `${0.1 + (index * 0.05)}s`; // Staggered animation
-        
+
         card.innerHTML = `
             <div class="card-icon" style="background: ${app.gradient}">
                 <i class="fa-solid ${app.icon}"></i>
@@ -119,11 +119,11 @@ function renderApps() {
                 </div>
             </div>
         `;
-        
+
         card.addEventListener('click', () => {
-             // Example action
-             console.log(`Clicked on ${app.title}`);
-             // window.location.href = app.link; 
+            // Example action
+            console.log(`Clicked on ${app.title}`);
+            // window.location.href = app.link; 
         });
 
         appGrid.appendChild(card);
@@ -146,7 +146,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     renderApps();
-    
+
     // Select all animated elements that might have been added
     const hiddenElements = document.querySelectorAll('.flow-up');
     hiddenElements.forEach(el => {
