@@ -41,12 +41,22 @@ const apps = [
         link: "https://play.google.com/store/apps/details?id=com.orho.orhostatussaver"
     },
     {
-        title: "E-Shop Pro",
-        description: "Full-featured e-commerce solution with cart and payments.",
-        tags: ["Next.js", "Stripe", "E-commerce"],
-        icon: "fa-bag-shopping",
-        gradient: "linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%)",
-        link: "#"
+        title: "Episcore",
+        description: "App Providing step-by-step solutions for university exam papers across multiple academic streams",
+        tags: ["Flutter", "Firebase", "Educational"],
+        icon: "fa-check-double",
+        logo: "assets/episcore_logo.png",
+        downloads: "5K+",
+        gradient: "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
+        link: "https://play.google.com/store/apps/details?id=com.orhotech.episcore"
+    },
+    {
+        title: "BarMan",
+        description: "A comprehensive inventory and POS system for managing bar stock, sales, and credit ledgers.",
+        tags: ["React", "Firebase", "Productivity"],
+        icon: "fa-glass-whiskey",
+        gradient: "linear-gradient(135deg, #a18cd1 0%, #4e46e5 100%)",
+        link: "https://orhobarman.xyz/"
     },
     {
         title: "Weather Now",
