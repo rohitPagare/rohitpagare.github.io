@@ -54,8 +54,8 @@ const apps = [
         title: "BarMan",
         description: "A comprehensive inventory and POS system for managing bar stock, sales, and credit ledgers.",
         tags: ["React", "Firebase", "Productivity"],
-        icon: "fa-glass-whiskey",
-        gradient: "linear-gradient(135deg, #a18cd1 0%, #4e46e5 100%)",
+        icon: "fa-wine-glass",
+        gradient: "linear-gradient(135deg, #4e46e5e9 0%, #4e46e5 100%)",
         link: "https://orhobarman.xyz/"
     },
     {
