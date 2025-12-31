@@ -55,49 +55,50 @@ const apps = [
         description: "A comprehensive inventory and POS system for managing bar stock, sales, and credit ledgers.",
         tags: ["React", "Firebase", "Productivity"],
         icon: "fa-wine-glass",
+        logo: "assets/barman_logo.png",
         gradient: "linear-gradient(135deg, #4e46e5e9 0%, #4e46e5 100%)",
         link: "https://orhobarman.xyz/"
-    },
-    {
-        title: "Weather Now",
-        description: "Beautiful weather forecasting app with animated backgrounds.",
-        tags: ["JS", "API", "Weather"],
-        icon: "fa-cloud-sun",
-        gradient: "linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)",
-        link: "#"
-    },
-    {
-        title: "Crypto Watch",
-        description: "Live cryptocurrency tracker with price alerts and charts.",
-        tags: ["Angular", "API", "Crypto"],
-        icon: "fa-bitcoin",
-        gradient: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
-        link: "#"
-    },
-    {
-        title: "Travel Di",
-        description: "Travel planning assistance and journal for backpackers.",
-        tags: ["Swift", "iOS", "Travel"],
-        icon: "fa-plane",
-        gradient: "linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)",
-        link: "#"
-    },
-    {
-        title: "Recipe Hub",
-        description: "Discover and share recipes from around the world.",
-        tags: ["React", "API", "Food"],
-        icon: "fa-utensils",
-        gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
-        link: "#"
-    },
-    {
-        title: "Dev Tools",
-        description: "Utility tools for developers including formatters and converters.",
-        tags: ["Svelte", "Tools", "Dev"],
-        icon: "fa-code",
-        gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        link: "#"
     }
+    // {
+    //     title: "Weather Now",
+    //     description: "Beautiful weather forecasting app with animated backgrounds.",
+    //     tags: ["JS", "API", "Weather"],
+    //     icon: "fa-cloud-sun",
+    //     gradient: "linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)",
+    //     link: "#"
+    // },
+    // {
+    //     title: "Crypto Watch",
+    //     description: "Live cryptocurrency tracker with price alerts and charts.",
+    //     tags: ["Angular", "API", "Crypto"],
+    //     icon: "fa-bitcoin",
+    //     gradient: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
+    //     link: "#"
+    // },
+    // {
+    //     title: "Travel Di",
+    //     description: "Travel planning assistance and journal for backpackers.",
+    //     tags: ["Swift", "iOS", "Travel"],
+    //     icon: "fa-plane",
+    //     gradient: "linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)",
+    //     link: "#"
+    // },
+    // {
+    //     title: "Recipe Hub",
+    //     description: "Discover and share recipes from around the world.",
+    //     tags: ["React", "API", "Food"],
+    //     icon: "fa-utensils",
+    //     gradient: "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
+    //     link: "#"
+    // },
+    // {
+    //     title: "Dev Tools",
+    //     description: "Utility tools for developers including formatters and converters.",
+    //     tags: ["Svelte", "Tools", "Dev"],
+    //     icon: "fa-code",
+    //     gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    //     link: "#"
+    // }
 ];
 
 // Render Apps
